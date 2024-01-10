@@ -24,3 +24,13 @@ This repository contains a simple text-based trivia game implemented in Python. 
 
    ```bash
    git clone https://github.com/StovenB/Sun-Bear-Trivia-Game.git
+
+2. Navigate to the proper directory:
+
+   ```bash
+   cd Sun-Bear-Trivia-Game
+
+3. Run the game:
+
+   ```bash
+   python main.py
