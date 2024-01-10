@@ -23,4 +23,4 @@ This repository contains a simple text-based trivia game implemented in Python. 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/StovenB/sun-bear-trivia-game.git
+   git clone https://github.com/StovenB/Sun-Bear-Trivia-Game.git
