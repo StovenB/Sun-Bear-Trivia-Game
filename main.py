@@ -46,7 +46,7 @@ while True:
                 input("Select the number next to the correct answer: ")) - 1
             answer_item = q1_list_copy[answer_index]
             if q1_list.index(answer_item) == 0:
-                print("\nWowza you know a lot about Sun bears!")
+                print("\nWowza you know a lot about sun bears!")
                 player_roster[i][1] += 1
             else:
                 print("\nOofta better luck next time!")
@@ -78,7 +78,7 @@ while True:
             print("\n"+winner, "is the winner!")
 
     question_dictionary = {"Sun bears are native to what part of the world?": ["South-east Asia", "The Amazon rain forest", "Australia"], "Sun bears have a distinct coloration known as a 'sun patch' located on their": ["Throats/torso", "Back and shoulders", "Ears"], "Sun bears are the smallest species of bear, weighing ______ on average": [
-        "60-150 lbs", "200-300 lbs", "20-70 lbs"], "Which statement is false?": ["Sun bears are mainly active at night", "Sun bears spend more time in trees than all other species of bears", "Sun bears are solitary animals"], "Sun bears are most closely related to what kind of bear?": ["Black bears", "Pandas", "Grizzly bears"]}
+        "60-150 lbs", "200-300 lbs", "20-70 lbs"], "Which statement is false?": ["Sun bears are mainly active at night", "Sun bears spend more time in trees than all other species of bear", "Sun bears are solitary animals"], "Sun bears are most closely related to what kind of bear?": ["Black bears", "Pandas", "Grizzly bears"]}
     question_keys_list = list(question_dictionary.keys())
     make_player_roster()
     take_turn()
