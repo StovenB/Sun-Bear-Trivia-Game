@@ -1,4 +1,63 @@
 import random
+from tkinter import *
+from tkinter import ttk
+
+root = Tk()
+
+# root window title and dimension
+root.title("Sun Bear Trivia")
+# Set geometry(widthxheight)
+root.geometry('550x300')
+
+var_1= StringVar()
+lbl_1 = Label(root, relief="solid", textvariable=var_1)
+lbl_1.grid(columnspan=4, row=1)
+
+player_count=StringVar()
+lbl_2 = Label(root)
+lbl_2.pack()
+
+m_display= StringVar()
+lbl_3 = Label(root, relief="solid")
+lbl_3.grid(columnspan=4, row=3)
+
+a = [2,3,4]
+
+# Combobox  
+cb = ttk.Combobox(root, values=a)
+cb.set("1")
+cb.grid(row=2, column=3)
+
+# set menu to display selected number and update player_count
+def show():
+    menu.config(text=cb.get())
+    #player_count.set(cb)
+    #make_player_roster()
+
+
+# Button to display selection  
+Button(root, text="Please select number of players", command=show).pack()
+
+# Label to show selected value  
+menu = Label(root, text=" ")
+menu.pack()
+
+player_roster = []
+final_scores = []
+
+def make_player(num):
+    player = Player(num)
+    display_txt = "Player:"+player.number
+    m_display.set(display_txt)
+   # player.name = input("enter your name: ")
+
+    return [player.name, player.score]
+
+def make_player_roster():
+    for i in range(int(player_count)):
+        player_roster.append(make_player(i + 1))
+
+
 
 
 class Player:
@@ -8,9 +67,10 @@ class Player:
         self.name = None
 
 
+
+var_1.set("Welcome to the Greatest Sun Bear Trivia Game You've Ever Played!")
+player_count = input("Please enter number of players: ")
 while True:
-    print("Welcome to the Greatest Sun Bear Trivia Game You've Ever Played!")
-    player_count = input("Please enter number of players: ")
     if int(player_count) > 4 or int(player_count) < 1:
         print("\nPlease choose between 1 and 4 players")
         continue
@@ -77,9 +137,7 @@ while True:
         if len(player_roster) > 1:
             print("\n"+winner, "is the winner!")
 
-    question_dictionary = {"Sun bears are native to what part of the world?": ["South-east Asia", "The Amazon rain forest", "Australia"], "Sun bears have a distinct coloration known as a 'sun patch' located on their": ["Throats/torso", "Back and shoulders", "Ears"], "Sun bears are the smallest species of bear, weighing ______ on average": [
-        "60-150 lbs", "200-300 lbs", "20-70 lbs"], "Which statement is false?": ["Sun bears are mainly active at night", "Sun bears spend more time in trees than all other species of bears", "Sun bears are solitary animals"], "Sun bears are most closely related to what kind of bear?": ["Black bears", "Pandas", "Grizzly bears"]}
-    question_keys_list = list(question_dictionary.keys())
+    
     make_player_roster()
     take_turn()
     take_turn()
@@ -91,3 +149,5 @@ while True:
         continue
     else:
         break
+# Execute Tkinter
+root.mainloop()
