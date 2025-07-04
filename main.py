@@ -106,7 +106,7 @@ while True:
                 input("Select the number next to the correct answer: ")) - 1
             answer_item = q1_list_copy[answer_index]
             if q1_list.index(answer_item) == 0:
-                print("\nWowza you know a lot about Sun bears!")
+                print("\nWowza you know a lot about sun bears!")
                 player_roster[i][1] += 1
             else:
                 print("\nOofta better luck next time!")
@@ -137,7 +137,7 @@ while True:
         if len(player_roster) > 1:
             print("\n"+winner, "is the winner!")
 
-    
+
     make_player_roster()
     take_turn()
     take_turn()
