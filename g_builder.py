@@ -174,7 +174,7 @@ while True:
         b_exit.place_forget()
         for i in range(int(player_count)):
             player_roster[i][1] = 0
-        print(player_roster)
+        final_scores.clear()
         play_game()
 
     b_again = Button(root, text="Play Again", command=again)
