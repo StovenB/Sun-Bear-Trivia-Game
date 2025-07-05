@@ -2,15 +2,27 @@
 
 ## Overview
 
-This repository contains a simple text-based trivia game implemented in Python. The game prompts users with trivia questions, accepts their answers, and provides feedback on correctness.
+Originally a text-based game, Sun Bear Trivia Game has been updated to use a graphical user interface 
+
+## Built With
+- Python
+- Tkinter
 
 ## Features
 
-- Text-based interface
+- Graphical User Interface
 - Multiplayer functionality
 - Random selection of trivia questions
-- User input for answering questions
+- User input 
 - Feedback on correct or incorrect answers
+
+
+![Welcome to TGSBTYEP](https://github.com/user-attachments/assets/724ee5d1-a590-44fa-a6de-84d4b53af64f)
+
+
+![Bill's turn](https://github.com/user-attachments/assets/9ed30de9-7570-4b95-902c-6b5fb654c45d)
+
+
 
 ## Getting Started
 
