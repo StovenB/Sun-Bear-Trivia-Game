@@ -13,7 +13,7 @@ Originally a text-based game, Sun Bear Trivia Game has been updated to use a gra
 - Graphical User Interface
 - Multiplayer functionality
 - Random selection of trivia questions
-- User input 
+- Multiple choice answers 
 - Feedback on correct or incorrect answers
 
 
@@ -45,4 +45,4 @@ Originally a text-based game, Sun Bear Trivia Game has been updated to use a gra
 3. Run the game:
 
    ```bash
-   python main.py
+   python g_builder.py
