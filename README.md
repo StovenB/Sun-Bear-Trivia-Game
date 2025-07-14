@@ -45,4 +45,4 @@ Originally a text-based game, Sun Bear Trivia Game has been updated to use a gra
 3. Run the game:
 
    ```bash
-   python g_builder.py
+   python main.py
